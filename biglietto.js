@@ -8,7 +8,8 @@ console.log(etaNumber, typeof etaNumber);
 
 const prezzoPerKm = 0.21;
 const prezzoBase = kmNumber * prezzoPerKm;
-console.log("km:", kmNumber);
+if (isNaN(kmNumber) || isNaN(etaNumber) || kmNumber <= 0 || etaNumber <= 0)
+  console.log("km:", kmNumber);
 console.log("eta", etaNumber);
 
 console.log("prezzoPerKm:", prezzoPerKm, typeof prezzoPerKm);
