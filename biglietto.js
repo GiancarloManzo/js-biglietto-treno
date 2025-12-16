@@ -2,6 +2,12 @@ const km = prompt("quanti km vuoi percorrere?");
 const età = prompt("quanti anni hai?");
 
 const kmNumber = parseInt(km);
-const etaNumber = parseInt(età);
+const etàNumber = parseInt(età);
 console.log(kmNumber, typeof kmNumber);
-console.log(etaNumber, typeof etaNumber);
+console.log(etàNumber, typeof etàNumber);
+
+const prezzoPerKm = 0.21;
+const prezzoBase = kmNumber * prezzoPerKm;
+console.log("km:", kmNumber);
+console.log("prezzoPerKm:", prezzoPerKm, typeof prezzoPerKm);
+console.log("prezzoBase:", prezzoBase, typeof prezzoBase);
