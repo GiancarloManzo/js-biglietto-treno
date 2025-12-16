@@ -1,3 +1,4 @@
+const nome = prompt("Come ti chiami?");
 const km = prompt("quanti km vuoi percorrere?");
 const eta = prompt("quanti anni hai?");
 
@@ -8,7 +9,13 @@ console.log(etaNumber, typeof etaNumber);
 
 const prezzoPerKm = 0.21;
 const prezzoBase = kmNumber * prezzoPerKm;
-if (isNaN(kmNumber) || isNaN(etaNumber) || kmNumber <= 0 || etaNumber <= 0)
+if (
+  !nome ||
+  isNaN(kmNumber) ||
+  isNaN(etaNumber) ||
+  kmNumber <= 0 ||
+  etaNumber <= 0
+)
   console.log("km:", kmNumber);
 console.log("eta", etaNumber);
 
